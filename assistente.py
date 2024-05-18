@@ -25,26 +25,27 @@ def ouvir_microfone():
     try:
         
         #Passa a variável para o algoritmo reconhecedor de padroes
-        frase = microfone.recognize_google(audio,language='jp')
+        frase = microfone.recognize_google(audio,language='ja')
 
         # if "navegador" in frase:
         #     os.system("start Chrome.exe")
         #     return False
+        
+        if "não entendi" in frase:
+            ### REQUISIÇÃO COM SCRIPT 'me explique o que foi dito por você na frase anterior' ###
+            return False
 
-        if "fechar" in frase:
+        if "o que é" in frase:
+            ### REQUISIÇÃO COM SCRIPT 'o que é {palavra}' ###
+            return False
+        
+        elif "fechar" in frase:
             os.system("exit")
             return True
-        
-        elif "não entendi" in frase:
-            ### REQUISIÇÃO COM SCRIPT 'me explique o que foi dito por você na frase anterior' ###
-            return True
 
-        elif "o que é" in frase:
-            ### REQUISIÇÃO COM SCRIPT 'o que é {palavra}' ###
-            return True
-        
         #Retorna a frase pronunciada
         print("Você disse: " + frase)
+        return False
 
         ### NESSE MOMENTO TERIA ALGUMA REQUISIÇÃO COM UM SCRIPT JÁ PRONTO NO CHATGPT PARA DAR CONTINUIDADE A CONVERSAÇÃO COM A LINGUA QUE ESTÁ PRATICANDO###
         
