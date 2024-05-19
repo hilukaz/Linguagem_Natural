@@ -13,7 +13,7 @@ Utilizei o recongnize_google para reconhecimento das palavras e conversão para 
 
 ## 🚀 Resultados
 Infelizmente, por conta da API da IA ser paga. Não é possível realizar os testes vigentes, entretanto, abaixo tem umas imagens de como seria o resultado se fosse possível
-![Img](img/Capturar.png)
+<img src="/img/Capturar.PNG" alt="Texto Alternativo">
 
 ## 💭 Reflexão
 Criar este programa foi uma experiência reveladora sobre o potencial criativo das IAs e como elas podem ser aplicadas em diferentes contextos.
