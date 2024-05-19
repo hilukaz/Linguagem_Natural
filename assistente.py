@@ -44,7 +44,7 @@ def ouvir_microfone():
             return True
 
         #Retorna a frase pronunciada
-        print("Você disse: " + frase)
+        print("me: " + frase)
         return False
 
         ### NESSE MOMENTO TERIA ALGUMA REQUISIÇÃO COM UM SCRIPT JÁ PRONTO NO CHATGPT PARA DAR CONTINUIDADE A CONVERSAÇÃO COM A LINGUA QUE ESTÁ PRATICANDO###
